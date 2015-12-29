@@ -21,7 +21,7 @@ class Header(ctypes.BigEndianStructure):
 
 pad = lambda s: s + (32 - len(s) % 32) * "\x00"
 if __name__ == '__main__':
-    config_file = "config_.bin"
+    config_file = "config.bin"
     # You may have to change the chars to check
     chars = string.lowercase
     
