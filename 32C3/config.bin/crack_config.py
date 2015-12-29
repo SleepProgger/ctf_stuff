@@ -1,3 +1,14 @@
+#
+# Bruteforces the config files password and unpack the tar.gz if succesfull.
+# This script only decrypt 16 bytes to verify the password.
+# This means it is kinda fast (120k check per second on my system),
+# but only works if the plaintext of the config.bin is a tar.gz
+# file with a name starting with "config".
+#
+# Information about the file header and structure found on
+# https://heinrichs.io
+#
+
 import ctypes
 from binascii import hexlify
 from hashlib import md5
