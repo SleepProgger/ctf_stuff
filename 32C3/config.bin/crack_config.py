@@ -1,5 +1,5 @@
 #
-# Bruteforces the config files password and unpack the tar.gz if succesfull.
+# Bruteforces the config.bin files password and unpack the tar.gz if succesfull.
 # This script only works if the "plain_text" is a gzip file (.gz).
 # This allows us to only decrypt the first block (16 byte) to verify the password.
 #
