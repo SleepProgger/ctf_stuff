@@ -58,7 +58,7 @@ if __name__ == '__main__':
     char_len = len(chars)
     padding = "\x00"*(32-header_struct.password_len)
     start_time = now()
-    for word in iter_product(chars, repeat=5):
+    for word in iter_product(chars, repeat=header_struct.password_len):
         word = "".join(word) + padding # This could be done faster
         if runs % 1000000 == 0 and runs > 0:
             start_time_ = now() - start_time
